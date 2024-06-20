@@ -3,7 +3,12 @@ pipeline{
     stages{
         stage("NPM Install"){
             steps{
-                bat "npm install"
+             powershell 'npm install'
+            }
+        }
+        stage("NPM audit"){
+            steps{
+             powershell 'npm audit'
             }
         }
     }
