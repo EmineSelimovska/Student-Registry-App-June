@@ -3,12 +3,12 @@ pipeline{
     stages{
         stage("NPM Install"){
             steps{
-             powershell 'npm install'
+             bat 'npm install'
             }
         }
         stage("NPM test"){
             steps{
-             powershell 'npm run test'
+             bat'npm run test'
             }
         }
     }
