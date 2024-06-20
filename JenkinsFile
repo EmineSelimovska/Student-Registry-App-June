@@ -6,9 +6,9 @@ pipeline{
              powershell 'npm install'
             }
         }
-        stage("NPM audit"){
+        stage("NPM test"){
             steps{
-             powershell 'npm audit'
+             powershell 'npm test'
             }
         }
     }
